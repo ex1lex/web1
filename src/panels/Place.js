@@ -36,7 +36,7 @@ const Place = ({
     return accounting.formatNumber(result, 0, " ");
   }, [order, item]);
 
-  if (price === 0) {
+  if (price == 0) {
     return (
       <div className="Place">
         <header className="Place__header">
@@ -197,8 +197,8 @@ const Place = ({
 
 Place.defaultProps = {
   item: {},
-  onIncrementPosition: () => {},
-  onDecrementPosition: () => {},
+  onIncrementPosition: () => { },
+  onDecrementPosition: () => { },
 };
 
 export default Place;
